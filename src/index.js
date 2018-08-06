@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 import './index.css';
 
 class Square extends React.Component {
@@ -16,7 +16,7 @@ class Board extends React.Component {
     renderSquare(i) {
         return <Square />;
     }
-    render (
+    render () {
         const status = 'Next player: X';
 
         return (
@@ -39,7 +39,7 @@ class Board extends React.Component {
                 </div>
             </div>
         );
-    )
+    }
 }
 
 class Game extends React.Component {
